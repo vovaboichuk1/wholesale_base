@@ -15,7 +15,7 @@
                 <TextBlock Text="Оптова База" FontSize="30" FontWeight="Bold" Margin="0 0 0 20" ></TextBlock>
                 <Grid Margin="0 0 0 20">
                     <Button HorizontalAlignment="Left" Content="Реєстрація" Click="Button_Click_reg" Background="#FF673AB7" Foreground="White"/>
-                    <Button HorizontalAlignment="Right" Content="Увійти" Background="AliceBlue" BorderThickness="1" />
+                    <Button HorizontalAlignment="Right" Content="Увійти" Background="AliceBlue" BorderThickness="0" />
                 </Grid>
                 <TextBlock Text="Введіть номер телефону"/>
                 <TextBox Margin="0 0 0 5" />
