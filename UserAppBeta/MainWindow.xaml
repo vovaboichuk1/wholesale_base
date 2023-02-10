@@ -1,0 +1,27 @@
+﻿<Window x:Class="UserAppBeta.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UserAppBeta"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1000">
+    <Grid Background="#FF673AB7">
+        <Border MinWidth="400" Margin="15" Background="AliceBlue" VerticalAlignment="Center" Padding="30" MaxWidth="550" CornerRadius="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightCyan" ShadowDepth="0"></DropShadowEffect>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Оптова База" FontSize="30" FontWeight="Bold" Margin="0 0 0 20" ></TextBlock>
+                <Grid Margin="0 0 0 20">
+                    <Button HorizontalAlignment="Left" Content="Реєстрація" Click="Button_Click_reg" Background="#FF673AB7" Foreground="White"/>
+                    <Button HorizontalAlignment="Right" Content="Увійти" Background="AliceBlue" BorderThickness="0" />
+                </Grid>
+                <TextBlock Text="Введіть номер телефону"/>
+                <TextBox Margin="0 0 0 5" />
+                <TextBlock Text ="Введіть пароль"/>
+                    <PasswordBox  />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,31 @@
+﻿<Window x:Class="UserAppBeta.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UserAppBeta"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid Background="#FF673AB7">
+        <Border MinWidth="400" Margin="15" Background="AliceBlue" VerticalAlignment="Center" Padding="30" MaxWidth="550" CornerRadius="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightCyan" ShadowDepth="0"></DropShadowEffect>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Реєстрація" FontSize="30" FontWeight="Bold" Margin="0 0 0 20" ></TextBlock>
+                <Grid Margin="0 0 0 20">
+                    <Button HorizontalAlignment="Right" Content="Реєстрація"  Background="AliceBlue" BorderThickness="0" />
+                    <Button HorizontalAlignment="Left" Content="Увійти"  Background="#FF673AB7" Foreground="White" Click="Button_Click_voi" />
+                </Grid>
+                <TextBlock Text = "Введіть Ім'я"/>
+                <TextBox/>
+                <TextBlock Text = "Введіть Номер телефону"/>
+                <TextBox/>
+                <TextBlock Text = "Введіть Пароль"/>
+                <PasswordBox/>
+                <TextBlock Text = "Підтвердіть пароль"/>
+                <PasswordBox/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
