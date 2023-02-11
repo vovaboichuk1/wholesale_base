@@ -13,18 +13,19 @@
             </Border.Effect>
             <StackPanel>
                 <TextBlock Text="Реєстрація" FontSize="30" FontWeight="Bold" Margin="0 0 0 20" ></TextBlock>
+                <TextBlock x:Name="exampleText" FontSize="15" FontWeight="Medium" Margin="0 0 0 20" ></TextBlock>
                 <Grid Margin="0 0 0 20">
-                    <Button HorizontalAlignment="Right" Content="Реєстрація"  Background="AliceBlue" BorderThickness="0" />
+                    <Button x:Name="Register_Program" HorizontalAlignment="Left" Content="Реєстрація"  Background="AliceBlue" BorderThickness="0" Margin="430,0,0,0" Height="20" VerticalAlignment="Bottom" Click="Register_Program_Click" />
                     <Button HorizontalAlignment="Left" Content="Увійти"  Background="#FF673AB7" Foreground="White" Click="Button_Click_voi" />
                 </Grid>
                 <TextBlock Text = "Введіть Ім'я"/>
-                <TextBox/>
+                <TextBox x:Name="TextBoxNames"/>
                 <TextBlock Text = "Введіть Номер телефону"/>
-                <TextBox/>
+                <TextBox x:Name="TextBoxNumber_Phone" TextChanged="TextBoxNumber_Phone_TextChanged"/>
                 <TextBlock Text = "Введіть Пароль"/>
-                <PasswordBox/>
+                <PasswordBox x:Name="TextBoxPassword"/>
                 <TextBlock Text = "Підтвердіть пароль"/>
-                <PasswordBox/>
+                <PasswordBox x:Name="TextBoxPssword2"/>
             </StackPanel>
         </Border>
     </Grid>
